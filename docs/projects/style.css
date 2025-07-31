@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080909;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+
+
+
+/* Header */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #080909;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Nav Links */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #068FFF;
+}
+
+
+
+/* Projects */
+.projects {
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.container {
+    height: auto;
+}
+
+.row-content {
+    margin: 0 auto 50px auto;
+    max-width: 1000px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.project-category {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+    color: #068FFF;
+}
+
+.more-button {
+    text-align: right;
+}
+
+.more-button button {
+    color: #EDEDED;
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.more-button button:hover {
+    background-color: #068FFF;
+    color: #fff;
+}
+
+.ui-contents {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Image hover animation */
+.project-image {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(6, 143, 255, 0.5);
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .more-button {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .row-content .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project-category {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .more-button button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
